@@ -1,0 +1,109 @@
+html{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  background-color: #000;
+  font-family: 'Teko', sans-serif;
+  font-size: 50px;
+  
+  /* Celebration Day Gradient
+
+  background-image: linear-gradient(to bottom, rgb(255, 238, 0), rgb(251, 190, 0), rgb(248, 143, 0), rgb(244, 95, 0), rgb(241, 48, 0), rgb(237, 0, 0), rgb(198, 42, 37), rgb(158, 83, 74), rgb(119, 125, 111), rgb(79, 167, 147), rgb(40, 208, 184), rgb(0, 250, 221));*/
+
+}
+.banner{
+  margin: auto;
+  display: table;
+  width: 1670px;
+  height: 60px;
+  background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+  text-align: center;
+  margin-left: 0px;
+}
+.container{
+  display: flex;
+  font-size:35px;
+  color: #fff;
+  justify-content: center;
+}
+h1{
+  margin: 0%;
+  background: -webkit-linear-gradient(#d64c7f, #ee4758);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1 span{
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #000;
+  border-left: 1px solid #000;
+  animation: maquina 4s infinite alternate steps(34);
+}
+@keyframes maquina {
+  from{
+    width: 100%;
+  }
+  to{
+    width: 0;
+  }
+}
+.contenedor{
+  display: flex;
+  justify-content: center;
+}
+.frase{
+  margin: 0%;
+  font-size: 60px;
+  color: #fff;
+  background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  border-radius: 100px;
+}
+/*#overlay_expandido{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+  background-color: rgba(0,0,0,0.3);
+}*/
+.menu{
+  margin-top: 50px;
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 30px;
+}
+ul li{
+  float: left;
+  width: 350px;
+  height: 40px;
+  background-color: #000;
+  /*opacity: .8;*/
+  text-align: center;
+  /*font-size: 20px;*/
+  line-height: 40px;
+  margin-right: 4px;
+  font-size: 50px;
+}
+ul li a{
+  text-decoration: none;
+  background: -webkit-linear-gradient(#d64c7f, #ee4758);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+ul li a:hover{
+  background-image: linear-gradient(25deg,#000,#fff 50%);
+  border-radius: 20px;
+}
+ul li ul li{
+  display: none;
+}
+ul li:hover ul li{
+  display: block;
+}
